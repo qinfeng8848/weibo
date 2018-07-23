@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <%#= link_to 'id为1的微博',{:controller => 'posts',:action => 'show',:id => 1}%>
+  <%= link_to 'id为1的微博',show_post_path(1)%>
+
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post', new_post_path %>

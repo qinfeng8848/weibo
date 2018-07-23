@@ -1,3 +1,16 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # get 'posts/:id', :to => 'posts#show', :as => 'show_post'
+  # post 'posts/:id', :to => 'posts#show'
+
+  # resources :posts, :except => :show
+  #resources :posts
+
+  resources :posts do
+    collection do
+      get 'recent'
+      get 'today'
+    end
+  end
+
+  root 'posts#index'
 end
