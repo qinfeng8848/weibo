@@ -5,12 +5,16 @@ Rails.application.routes.draw do
   # resources :posts, :except => :show
   #resources :posts
 
-  resources :posts do
-    collection do
-      get 'recent'
-      get 'today'
-    end
-  end
+  # resources :posts do
+  #   collection do
+  #     get 'recent'
+  #     get 'today'
+  #   end
+  # end
+
+  resources :posts
+
+
 
   root 'posts#index'
 end
