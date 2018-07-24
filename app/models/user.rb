@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :posts
 
   validates :userName, presence: true, length:{maximum: 20}
   EMAIL = /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i

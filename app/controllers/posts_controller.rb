@@ -24,14 +24,14 @@ class PostsController < ApplicationController
   def recent
   end
 
-  def today  
+  def today
   end
 
   # POST /posts
   # POST /posts.json
   def create
     @post = Post.new(post_params)
-
+    @post.user_id = session[:user_id]
     respond_to do |format|
       if @post.save
         format.html { redirect_to @post, notice: 'Post was successfully created.' }

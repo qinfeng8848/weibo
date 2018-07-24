@@ -3,6 +3,7 @@
 <p>
   <strong>Content:</strong>
   <%= @post.content %>
+<h6>作者<%= @post.user.userName%></h6> 
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
