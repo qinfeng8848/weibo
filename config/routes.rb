@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  # get 'users/new'
   # get 'posts/:id', :to => 'posts#show', :as => 'show_post'
   # post 'posts/:id', :to => 'posts#show'
 
@@ -12,6 +13,7 @@ Rails.application.routes.draw do
   #   end
   # end
 
+  resources :users
   resources :posts
 
 
