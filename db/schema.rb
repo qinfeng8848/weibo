@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_24_040329) do
+ActiveRecord::Schema.define(version: 2018_07_24_125457) do
 
   create_table "posts", force: :cascade do |t|
     t.text "content"
@@ -23,9 +23,9 @@ ActiveRecord::Schema.define(version: 2018_07_24_040329) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "passwrod_digest"
     t.string "password_digest"
     t.string "name"
+    t.string "password"
   end
 
 end

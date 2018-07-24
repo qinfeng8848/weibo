@@ -1,4 +1,4 @@
-<hi> Sign up</hi>
+<h1> Sign up</h1>
  <% if @user.errors.any? %>
  <div id="error_explanation">
    <div class="alert alert-danger">
@@ -24,7 +24,7 @@
       <%=f.password_field :password %>
       <%=f.label :password_confirmation, "Confirmation" %>
       <%=f.password_field :password_onfination %>
-      <%=f.submit "Create my account", class:"btn btn-primary" %>
+      <%=f.submit "新建帐号", class:"btn btn-primary" %>
     <% end %>
   </div>
 </div>

@@ -1,3 +1,5 @@
 <h1>show active</h1>
 user name:<%= @user.userName %></br>
-user email:<%= @user.email %> 
+user email:<%= @user.email %>
+
+<%= link_to "log out", logout_path, method: "delete"%>
