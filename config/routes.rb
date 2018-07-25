@@ -18,5 +18,5 @@ Rails.application.routes.draw do
 
 
 
-  root 'posts#index'
+  root 'sessions#new'
 end
